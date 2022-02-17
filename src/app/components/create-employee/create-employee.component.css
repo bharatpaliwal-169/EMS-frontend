@@ -1,0 +1,16 @@
+input[type=text]{
+    background-color: #232c34;
+    color: #fff;
+}
+input[type=text]:focus{
+    background-color: #232c34;
+    color: #fff;
+}
+input[type=email]{
+    background-color: #232c34;
+    color: #fff;
+}
+input[type=email]:focus{
+    background-color: #232c34;
+    color: #fff;
+}

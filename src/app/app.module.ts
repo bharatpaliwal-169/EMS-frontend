@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
+
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-
     FooterComponent,
     EmployeeListComponent,
-    NavbarComponent
+    NavbarComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
