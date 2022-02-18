@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
 
 import { FormsModule } from "@angular/forms";
+import { UpdateEmployeeComponent } from './components/update-employee/update-employee.component';
+import { DetailEmployeeComponent } from './components/detail-employee/detail-employee.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from "@angular/forms";
     FooterComponent,
     EmployeeListComponent,
     NavbarComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    UpdateEmployeeComponent,
+    DetailEmployeeComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@
                     <th scope="col">ID</th>
                     <th scope="col">UserName</th>
                     <th scope="col">Email ID</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -17,6 +18,20 @@
                     <td scope="row"> {{employee.id}} </td>
                     <td> {{employee.fullname}} </td>
                     <td> {{employee.email}} </td>
+                    <td>
+                        <button (click)="updateEmployee(employee.id)" 
+                        class="btn btn-md btn-outline-primary  m-1">
+                            Update
+                        </button>
+                        <button (click)="deleteEmployee(employee.id)"
+                        class="btn btn-md btn-outline-danger  m-1">
+                            Delete
+                        </button>
+                        <button (click)="detailEmployee(employee.id)"
+                        class="btn btn-md btn-outline-info m-1">
+                            Details
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>

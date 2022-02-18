@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2 card bg-dark bg-gradient mt-5 mb-5">
+        <form (ngSubmit) = "onSubmit()" class="mt-4" >
+            <h3 class="card-header text-center"> Update Employee</h3>
+
+            <div class="form-floating m-4">
+                <input type="text" class="form-control" id="floatingName" 
+                    [(ngModel)] = "employee.fullname" name="fullname"
+                >
+                <label for="floatingName">Full Name</label>
+            </div>
+
+            <div class="form-floating m-4">
+                <input type="email" class="form-control" id="floatingInput" 
+                    [(ngModel)] = "employee.email" name="email"
+                >
+                <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating m-4">
+                <button class="w-100 btn btn-lg btn-outline-light" type="submit">
+                    Update
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
